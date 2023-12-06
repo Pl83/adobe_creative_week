@@ -16,18 +16,12 @@
 body {
     background-color: var(--background-color-darkmode);
     color: var(--text-color-darkmode);
+    font-family: 'inter', sans-serif;
 }
 
 .toAccentuate {
     color: var(--accent-color);
 }
-
-
-
-
-
-
-
 
 
 
@@ -44,6 +38,7 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    z-index: 7;
 }
 
 header nav ul{
@@ -59,7 +54,7 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
     color: var(--text-color-darkmode);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 header nav ul li a:hover {
@@ -76,6 +71,7 @@ header button {
     padding: 10px 40px;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1.2rem;
     color: var(--text-color-darkmode);
 }
 
@@ -90,11 +86,6 @@ header button:hover {
 
 
 
-
-
-
-
-
 /* main */ 
 
 /* main section 1 */
@@ -102,7 +93,7 @@ header button:hover {
 main section:nth-child(1) {
     height: calc(100vh - 90px);
     width: 100%;
-    background-color: violet;
+    background-color: var(--background-color-darkmode);
     background-image: url(img/bg_section_one.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -119,7 +110,7 @@ main section:nth-child(1) div:nth-child(1) {
     flex-direction: row;
 }
 main section:nth-child(1) div:nth-child(1) h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
 }
 
@@ -129,8 +120,8 @@ main section:nth-child(1) div:nth-child(1) h2:nth-child(1) {
 }
 
 main section:nth-child(1) div:nth-child(1) hr{
-    width: 100px;
-    height: 5px;
+    width: 110px;
+    height: 4px;
     background-color: var(--accent-color);
     border: none;
     rotate: 140deg;
@@ -149,7 +140,7 @@ main section:nth-child(1) button:nth-child(1) {
     padding: 10px 20px;
     border-radius: 5px;
     color: var(--text-color-darkmode);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -170,7 +161,7 @@ main section:nth-child(1) button:nth-child(2) {
     padding: 10px 20px;
     border-radius: 5px;
     color: var(--text-color-darkmode);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -180,13 +171,12 @@ main section:nth-child(1) button:nth-child(2) {
 
 main section:nth-child(1) button:nth-child(2):hover {
     background-color: var(--accent-color);
-    border: none;
     color: var(--text-color-darkmode);
     cursor: pointer;
 }
 
 main section:nth-child(1) p {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 400;
     width: 30%;
     text-align: center;
@@ -194,3 +184,128 @@ main section:nth-child(1) p {
 
 
 
+
+
+/* main section 2 */
+
+main section:nth-child(2) {
+    padding-top: 90px;
+}
+
+main section:nth-child(2) div:nth-child(1) {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+main section:nth-child(2) div:nth-child(1) div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main section:nth-child(2) div:nth-child(1) div>div {
+    display: flex;
+    flex-direction: row;
+}
+
+main section:nth-child(2) div:nth-child(1) hr {
+    width: 50px;
+    height: 3px;
+    background-color: var(--accent-color);
+    border: none;
+}
+
+main section:nth-child(2) div:nth-child(1) p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 75%;
+}
+
+main section:nth-child(2) .valeur{
+    margin-top: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+#correctifImgSize {
+    position: relative;
+    left: -3%;
+}
+
+main section:nth-child(2) .valeur h3 {
+    padding-bottom: 20px;
+}
+
+
+
+
+/* main section 3 */
+
+main section:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+}
+
+main section:nth-child(3) video {
+    height: calc(100vh - 90px);
+    width: auto;
+}
+
+main section:nth-child(3) div:first-of-type {
+    z-index: 3;
+    position: relative;
+    top: -240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section:nth-child(3) div:first-of-type p {
+    font-size: 1.2rem;
+}
+
+main section:nth-child(3) div:first-of-type p:nth-child(1) {
+    padding-bottom: 20px;
+    font-size: 1rem;
+}
+
+main section:nth-child(3) div:first-of-type hr {
+    width: 120px;
+    height: 4px;
+    background-color: var(--accent-color);
+    border: none;
+    margin: 20px;
+
+}
+
+main section:nth-child(3) div:first-of-type button {
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: var(--text-color-darkmode);
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+main section:nth-child(3) div:first-of-type button:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color-darkmode);
+    cursor: pointer;
+}
