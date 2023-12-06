@@ -443,6 +443,9 @@ main section:nth-child(4) #controleSlider {
     justify-content: end;
     align-items: center;
     gap: 20px;
+}
+
+main section:nth-child(4) #controleSlider img:hover{
     cursor: pointer;
 }
 
@@ -528,6 +531,10 @@ footer .QA {
     font-size: 1.3rem;
 }
 
+footer .QA:hover {
+    cursor: pointer;
+}
+
 footer p {
     display: none;
     font-size: 1.1rem;
@@ -547,6 +554,10 @@ footer hr {
     display: block;
 }
 
+.rotate {
+    transform: rotate(90deg);
+}
+
 footer button {
     background-color: transparent;
     border: 1px solid var(--text-color-darkmode);
@@ -562,6 +573,16 @@ footer button {
     margin-bottom: 70px;
     margin-left: auto;
     margin-right: auto;
+}
+
+footer button:hover {
+    background-color: var(--text-color-darkmode);
+    color: var(--background-color-darkmode);
+    cursor: pointer;
+}
+
+footer button:hover img {
+    filter: invert(1);
 }
 
 footer section p {
