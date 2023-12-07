@@ -245,7 +245,24 @@ main section:nth-child(2) .valeur h3 {
     padding-bottom: 20px;
 }
 
+.fadeOut {
+    animation: fadeOut 21s ease-in-out;
+}
 
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 0;
+    }
+    95% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 
 /* main section 3 */

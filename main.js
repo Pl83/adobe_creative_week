@@ -50,5 +50,18 @@ function speakText(text) {
 window.addEventListener('mouseup', selection);
 
 
+const video = document.querySelector('video');
+
+const pToHide = document.querySelectorAll('#section3 p');
+const hrToHide = document.querySelectorAll('#section3 hr');
+const toHide = [...pToHide, ...hrToHide];
+console.log(toHide);
+// when the video start playing fade opacity to 0 for toHide elements
+video.addEventListener('play', () => {
+    toHide.forEach(element => {
+        element.classList.add('fadeOut');
+    });
+});
+
 
 
