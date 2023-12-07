@@ -27,14 +27,28 @@ QA.forEach((question, index) => {
     });
 } );
 
-function selection(){
-    if (window.getSelection) {
-        console.log(window.getSelection().toString());
+function selection() {
+    var selectedText = window.getSelection().toString().trim();
+    
+    if (selectedText !== "") {
+        speakText(selectedText);
     }
-          
+}
+
+function speakText(text) {
+    // Utilisez l'API SpeechSynthesis pour lire le texte à haute voix
+    var speechSynthesis = window.speechSynthesis;
+    var speechUtterance = new SpeechSynthesisUtterance(text);
+
+    // Vous pouvez ajuster les paramètres de la voix ici si nécessaire
+    // speechUtterance.voice = ...;
+
+    // Lance la synthèse vocale
+    speechSynthesis.speak(speechUtterance);
 }
 
 window.addEventListener('mouseup', selection);
 
 
-var text = "Hello World!"
+
+
