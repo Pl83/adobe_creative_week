@@ -246,21 +246,21 @@ main section:nth-child(2) .valeur h3 {
 }
 
 .fadeOut {
-    animation: fadeOut 21s ease-in-out;
+    animation: fadeOut 3600s ease-in-out;
 }
 
 @keyframes fadeOut {
     0% {
         opacity: 1;
     }
-    5% {
+    0.05% {
         opacity: 0;
     }
     95% {
         opacity: 0;
     }
     100% {
-        opacity: 1;
+        opacity: 0;
     }
 }
 

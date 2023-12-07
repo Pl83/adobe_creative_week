@@ -1,9 +1,20 @@
 const navLinks = document.querySelectorAll('.navLink');
+var sections = [];
+for (let i = 1; i <= 5; i++) {
+    sections.push(document.getElementById('section' + i));
+}
 
 navLinks.forEach((link) => {
     link.addEventListener('click', () => {
         navLinks.forEach((link) => link.classList.remove('active'));
         link.classList.add('active');
+    });
+});
+
+sections.forEach((section) => {
+    section.addEventListener('mouseenter', () => {
+        navLinks.forEach((link) => link.classList.remove('active'));
+        document.querySelector('a[href="#' + section.id + '"]').classList.add('active');
     });
 });
 
@@ -55,8 +66,6 @@ const video = document.querySelector('video');
 const pToHide = document.querySelectorAll('#section3 p');
 const hrToHide = document.querySelectorAll('#section3 hr');
 const toHide = [...pToHide, ...hrToHide];
-console.log(toHide);
-// when the video start playing fade opacity to 0 for toHide elements
 video.addEventListener('play', () => {
     toHide.forEach(element => {
         element.classList.add('fadeOut');
