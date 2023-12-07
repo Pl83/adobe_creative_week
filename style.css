@@ -436,7 +436,7 @@ main section:nth-child(4) #rexs .rex div:first-of-type div {
 main section:nth-child(4) #controleSlider {
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 15%;
+    padding-top: 110px;
     padding-bottom: 30px;
     display: flex;
     flex-direction: row;
