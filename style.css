@@ -109,7 +109,6 @@ main section:nth-child(1) div:nth-child(1) {
     width: fit-content;
     display: flex;
     flex-direction: row;
-    background-color: violet;
 }
 main section:nth-child(1) div:nth-child(1) h2 {
     font-size: 1.8rem;
